@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".signup">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="293dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="126dp"
+        android:background="#0B0B0B"
+        android:backgroundTint="#ACACAC"
+        android:fontFamily="sans-serif-thin"
+        android:text="Signup Page"
+        android:textAlignment="center"
+        android:textColor="#F1F1F1"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backs" />
+
+    <LinearLayout
+        android:layout_width="278dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="153dp"
+        android:background="#A1A1A1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:hint="Choose a Username"
+            android:inputType="text"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:hint="Create a Password"
+            android:inputType="textPassword"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backs"
+        android:layout_width="161dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="141dp"
+        android:backgroundTint="#DADADA"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:text="Back"
+        android:textColor="#4E4E4E"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="274dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="335dp"
+        android:layout_marginEnd="126dp"
+        android:background="#000000"
+        android:backgroundTint="#AAAAAA"
+        android:fontFamily="sans-serif-thin"
+        android:text="Main Page"
+        android:textAlignment="center"
+        android:textColor="#F1F1F1"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="297dp"
+        android:layout_height="177dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:backgroundTint="#EDEDED"
+            android:clickable="true"
+            android:fontFamily="sans-serif-thin"
+            android:insetLeft="6dp"
+            android:insetRight="6dp"
+            android:onClick="onClick"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#2B2B2B"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:strokeColor="#21232C"
+            app:strokeWidth="3dp" />
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:backgroundTint="#EDEDED"
+            android:clickable="true"
+            android:fontFamily="sans-serif-thin"
+            android:gravity="center"
+            android:insetLeft="6dp"
+            android:insetRight="6dp"
+            android:onClick="onClick"
+            android:text="Signup"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#2B2B2B"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:strokeColor="#21232C"
+            app:strokeWidth="3dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
